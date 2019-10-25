@@ -11,6 +11,15 @@ let numWrong = 0;
 /** Loop over the chars in `word` and create divs. */
 const createDivsForChars = (word) => {
   // Replace this with your code
+  // for letter in word
+    // const new-div 
+    // `class = "letter-box ${letter}"`
+    // append div to "#word-container"
+
+  for (const char of word) {
+    $('#word-container').append(`<div class="letter-box ${char}"></div>`)
+  }
+
 };
 
 
