@@ -47,6 +47,17 @@ const disableLetterButton = (buttonEl) => {
 /** Return `true` if `letter` is in the word. */
 const isLetterInWord = (letter) => {
   // Replace this with your code
+  // get all divs that belong to letter class
+  // `.${letter}`
+  // if dict[key] {} -> can be false
+  // if class 'h' {} -> always true
+  // if class $('h')[0] -> can be false
+  if($(`div.${letter}`)[0]) {
+    return true;
+  } else {
+    return false;
+  }
+  
 };
 
 
